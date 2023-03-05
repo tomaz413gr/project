@@ -436,7 +436,7 @@ font-size: 36px;
 margin-top: 90px;
 margin-bottom: 32px;
 text-align: center;
-text-transform: uppercase;
+text-transform: uppercase;/*все заглавные*/
 }
 .contimg {
   max-width: 1100px;
@@ -551,3 +551,9 @@ background-color: transparent;
 .hover_yellow:hover {
     background-color: yellow;
 } */
+.col1_foto {
+background-image: url(img/Фото\ директора.png);
+max-height: 500px;
+min-width: 252px;
+
+}
