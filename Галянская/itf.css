@@ -553,7 +553,13 @@ background-color: transparent;
 } */
 .col1_foto {
 background-image: url(img/Фото\ директора.png);
-max-height: 500px;
-min-width: 252px;
+height: 500px;
+width: 252px;
+
+}
+.col3_yellow_img {
+height: 500px;
+width: 346px;
+background-color: #ffcc00;
 
 }
