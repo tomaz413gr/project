@@ -464,10 +464,11 @@ a {
 .bgimg1:hover {
   background-size: 110%;
 }
+
 .cont_a {
   height: 54px;
   width: 252px;
-  background-image: url(img/Rectangle\ Корпусная\ мебель.png);
+  background-image: url(img/88888.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -551,12 +552,7 @@ a_img1:link {
 .a_img1:active {
   text-decoration: none;
 }
-/* .hover_yellow {
-background-color: transparent;
-}
-.hover_yellow:hover {
-    background-color: yellow;
-} */
+
 .col1_foto {
   /* background-image: url(img/Фото\ директора.png);
 background-repeat: no-repeat; */
