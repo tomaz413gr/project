@@ -473,7 +473,7 @@ a {
 .cont_a {
   height: 54px;
   width: 252px;
-  background-image: url(img/Rectangle\Умные\кухни\(1\).png);
+  background-image: url(img/Rectangle\ Умные\ кухни\(1\).png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -482,7 +482,7 @@ a {
 }
 .cont_a:hover {
   color: black;
-  background-image: url(img/active\Rectangle\Кухни\(1\).png);
+  background-image: url(img/active\ Rectangle\ Кухни\(1\).png);
 }
 .cont_a:hover a {
   color: black;
