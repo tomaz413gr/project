@@ -448,9 +448,15 @@ a {
   max-width: 1100px;
   margin: 0 auto;
 }
-
+.kitchen_solutions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .bgimg1 {
-  margin: 0 20px 20px 0;
+  margin-right:15px;
+  margin-top: 15px;
+  /* margin: 0 20px 20px 0; */
   height: 300px;
   min-width: 535px;
   background-image: url(img/фото\ Корпусная\ мебель.png);
@@ -466,9 +472,11 @@ a {
 }
 
 .cont_a {
+  /* padding-left: -8px; */
   height: 54px;
   width: 252px;
-  background-image: url(img/88888.png);
+  background-image: url(img/Rectangle\ Умные\ кухни\(1\).png);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,13 +484,16 @@ a {
 }
 .cont_a:hover {
   color: black;
-  background-image: url(img/active\ Rectangle\ Кухни.png);
+  background-image: url(img/active\ Rectangle\ Кухни\(1\).png);
+  
 }
 .cont_a:hover a {
   color: black;
 }
 
 .bgimg2 {
+  margin-right:15px;
+  margin-top: 15px;
   height: 300px;
   min-width: 535px;
   background-image: url(img/фото\ Кухни.png);
@@ -497,7 +508,9 @@ a {
   background-size: 110%;
 }
 .bgimg3 {
-  margin: 0 20px 20px 0;
+  margin-right:15px;
+  margin-top: 15px;
+  /* margin: 0 20px 20px 0; */
   height: 300px;
   min-width: 535px;
   background-image: url(img/фото\ Полная\ меблировка.png);
@@ -512,6 +525,8 @@ a {
   background-size: 110%;
 }
 .bgimg4 {
+  margin-right:15px;
+  margin-top: 15px;
   height: 300px;
   min-width: 535px;
   background-image: url(img/фото\ Умные\ кухни.png);
