@@ -661,7 +661,6 @@ a_img1:link {
 }
 .flex_cont {
   width: 535px;
- 
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -682,4 +681,26 @@ a_img1:link {
 }
 h4 {
   text-align: start;
+}
+.section_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_content3 {
+  
+  padding: 0 50px;
+ box-shadow: 10px 10px 20px rgba(172, 172, 172, 0.25);
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.header_top {
+  margin-top: 30px;
 }
