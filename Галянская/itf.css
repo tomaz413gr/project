@@ -704,3 +704,30 @@ h4 {
 .header_top {
   margin-top: 30px;
 }
+.flex_yellow {
+  background-color: #ffcc00;
+  width: 535px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_black {
+  background-color: black;
+  width: 535px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gap_section1{
+gap: 30px;
+}
+.col_content_yellow {
+  /* width: 255px; */
+  padding-right: 15px;
+
+}
+.col_content_black {
+  padding-right: 15px;
+  color: yellow;
+  padding-left: 15px;
+}
