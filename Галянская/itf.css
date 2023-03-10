@@ -731,3 +731,24 @@ gap: 30px;
   color: yellow;
   padding-left: 15px;
 }
+.Sign_up {
+  width: 535px;
+  height: 342px;
+  text-align: center;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.yellow_span {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: yellow;
+}
+.Sign_up_content {
+  width: 565px;
+  height: 342px;
+  background-image: url(img/фото\ в\ форме\ \(2\).png);
+  background-size: cover;
+}
