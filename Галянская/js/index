@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-
-    
+<div class="content"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perspiciatis odit, provident voluptatem nulla sapiente atque nesciunt quo magnam quidem debitis nam voluptatibus, quia qui. Laboriosam animi omnis dolorum adipisci.</p>
     <script src="java_script"></script>
 </body>
 </html>
