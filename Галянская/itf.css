@@ -473,7 +473,7 @@ a {
 .cont_a {
   height: 54px;
   width: 252px;
-  background-image: url(img/Rectangle\ Умные\ кухни\(1\).png);
+  background-image: url(img/Rectangle\Умные\кухни\(1\).png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -482,7 +482,7 @@ a {
 }
 .cont_a:hover {
   color: black;
-  background-image: url(img/active\ Rectangle\ Кухни\(1\).png);
+  background-image: url(img/active\Rectangle\Кухни\(1\).png);
 }
 .cont_a:hover a {
   color: black;
@@ -594,7 +594,7 @@ a_img1:link {
 .black_sticker {
   width: 110px;
   height: 56px;
-  background-image: url(img/Rectangle\ акцен\ ваше\ обращение\(1\).png);
+  background-image: url(img/Rectangle\акцен\ваше\обращение\(1\).png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -612,8 +612,7 @@ a_img1:link {
   justify-content: center;
 }
 .card_content {
-  
-   padding: 0 50px;
+  padding: 0 50px;
   box-shadow: 10px 10px 20px rgba(172, 172, 172, 0.25);
   display: flex;
   justify-content: space-around;
@@ -693,13 +692,12 @@ h4 {
   justify-content: space-between;
 }
 .card_content3 {
-  
   padding: 0 50px;
- box-shadow: 10px 10px 20px rgba(172, 172, 172, 0.25);
- display: flex;
- justify-content: space-around;
- align-items: center;
- flex-wrap: wrap;
+  box-shadow: 10px 10px 20px rgba(172, 172, 172, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .header_top {
   margin-top: 30px;
@@ -718,13 +716,12 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
-.gap_section1{
-gap: 30px;
+.gap_section1 {
+  gap: 30px;
 }
 .col_content_yellow {
   /* width: 255px; */
   padding-right: 15px;
-
 }
 .col_content_black {
   padding-right: 15px;
@@ -735,20 +732,62 @@ gap: 30px;
   width: 535px;
   height: 342px;
   text-align: center;
-  
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
 .yellow_span {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: yellow;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-weight: 600;
+  font-size: 20px; */
+  color: rgba(255, 206, 8, 1);
 }
 .Sign_up_content {
   width: 565px;
   height: 342px;
   background-image: url(img/фото\ в\ форме\ \(2\).png);
   background-size: cover;
+}
+.input_name {
+  width: 347px;
+  height: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #a8a8a8;
+  outline: none;
+  border: 1px solid #a8a8a8;
+  box-shadow: inset 3px 3px 10px rgba(138, 138, 138, 0.25);
+}
+.input_name:focus::placeholder {
+  color: transparent;
+}
+.box {
+  width: 347px;
+  position: relative;
+}
+.box input {
+  /* display: none; */
+  width: 347px;
+  height: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #a8a8a8;
+  outline: none;
+  border: 1px solid #a8a8a8;
+  box-shadow: inset 3px 3px 10px rgba(138, 138, 138, 0.25);
+}
+.box span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.input_number:focus::placeholder {
+  color: transparent;
 }
