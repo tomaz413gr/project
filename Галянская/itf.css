@@ -740,7 +740,7 @@ h4 {
 .Sign_up_content {
   width: 565px;
   height: 342px;
-  background-image: url(img/фото\ в\ форме\ \(2\).png);
+  background-image: url(img/фото\в\форме\\(2\).png);
   background-size: cover;
 }
 .Sign_up span {
@@ -813,26 +813,45 @@ input {
 :focus:-ms-input-placeholder {
   opacity: 0;
 }
-.a_yellow_button {color: black;}
-.a_yellow_button:link {text-decoration: none;}
-.a_yellow_button:visited {text-decoration: none;}
-.a_yellow_button:active {text-decoration: none;}
+.a_yellow_button {
+  color: black;
+}
+.a_yellow_button:link {
+  text-decoration: none;
+}
+.a_yellow_button:visited {
+  text-decoration: none;
+}
+.a_yellow_button:active {
+  text-decoration: none;
+}
 .text_button_bottom {
   width: 347px;
   text-align: start;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 .footer {
   margin-top: 90px;
-  padding: 0;
-  background-color: black;
+  background-color: black; 
 }
 .footer_conteiner {
-  width: 1100px / 4px;
+  margin: 0 auto;
+  height: 250px;
+  max-width: 1100px;
   display: flex;
-  /* justify-content: space-around;
-  align-content: center; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_conteiner_interior {
+  width: 22.727273%; /* 250px/1100 */
+  color: #a8a8a8;
+}
+.hr2 {
+  border-left: 0px solid #555555;
+  width: 135px;
 }
