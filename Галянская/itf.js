@@ -9,3 +9,4 @@ inputTel.addEventListener('mouseover', () => {
 inputTel.addEventListener('mouseout', () => {
   inputTel.placeholder = placeholder;
 })
+console.log('пися');

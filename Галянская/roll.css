@@ -1,0 +1,36 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+.cont {
+    /* width: 200px;
+    height: 500px; */
+}
+.conteiner  {
+    display: flex;
+}
+.rol_1 {
+    width: 150px;
+    height: 100px;
+    background-image: url(roll_img/1616075176_psfix_201.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.rol_2 {
+    width: 150px;
+    height: 100px;
+    background-image: url(roll_img/Seafoods_Sushi_511672.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.quantity {
+    display: flex;
+    background-color: lightblue;
+}
+.quantity_size {
+    width: 10px;
+    height: 20px;
+}
+.numb {
+    background-color: cadetblue;
+}
