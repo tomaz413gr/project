@@ -1,3 +1,5 @@
+const basket = document.querySelector('.basket_content');
+
 window.addEventListener('click', function (event) {
     if (event.target.hasAttribute('data-cart')) {
         const card = event.target.closest('.cont');
@@ -10,7 +12,19 @@ window.addEventListener('click', function (event) {
             price: card.querySelector('.price_currency').innerText,
             counter: card.querySelector('[data-counter]').innerText,
         };
-        console.log(productInfo);
-        console.log('gjnkgj');
+        const cartItemHtml = `<div class="basket" data-id="${productInfo.id}">
+        <div class="item_img"><img src=${productInfo.imgSrc} alt="">></div>
+        <div class="item_info">
+            <h5>${productInfo.title}</h5>
+            <span>${productInfo.itensInBox}/</span><span>${productInfo.weight}.</span>
+            <div class="quantity_basket">
+                <div class="minus quantity_size" data-action="minus">-</div>
+                <div class="numb quantity_size" data-counter>1</div>
+                <div class="plus quantity_size" data-action="plus">+</div>
+                <div class="price_item">${productInfo.price}.</div>
+            </div>
+        </div>
+    </div>`;
+    basket.insertAdjacentHTML('beforeend',cartItemHtml);
     }
 })
