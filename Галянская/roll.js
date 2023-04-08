@@ -4,29 +4,31 @@
 // const counter = document.querySelector('[data-counter]');
 //отслеживаем клик по минусу
 // btnMinus.addEventListener('click', function(){
-    //проверяем чтобы текст в счетчике был больше единицы
-    // if (parseInt(counter.innerText) > 1){
-        //при выполнении условия уменьшаем на единицу
+//проверяем чтобы текст в счетчике был больше единицы
+// if (parseInt(counter.innerText) > 1){
+//при выполнении условия уменьшаем на единицу
 //         counter.innerText = --counter.innerText;
 //     }
-    
+
 // });
 //отслеживаем клик по плюсу
 // btnPlus.addEventListener('click', function(){
-    //увеличиваем текст при клике на плюс на единицу
+//увеличиваем текст при клике на плюс на единицу
 //     counter.innerText = ++counter.innerText;
 // });
-window.addEventListener('click', function(event){
-    if (event.target.dataset.action === 'plus'){
-        
-        const counterWrapper = event.target.closest('.counter-wrapper');
-        const counter = counterWrapper.querySelector('[data-counter]');
+window.addEventListener('click', function (event) {
+let counter;
+if (event.target.dataset.action === 'minus' || event.target.dataset.action === 'plus'){
+    const counterWrapper = event.target.closest('.counter-wrapper');
+    counter = counterWrapper.querySelector('[data-counter]');
+}
+    
+    if (event.target.dataset.action === 'plus') {
         counter.innerText = ++counter.innerText;
     }
-    if (event.target.dataset.action === 'minus'){
-        
-        const counterWrapper = event.target.closest('.counter-wrapper');
-        const counter = counterWrapper.querySelector('[data-counter]');
-        counter.innerText = --counter.innerText;
+    if (event.target.dataset.action === 'minus') {
+        if (parseInt(counter.innerText) > 1) {
+            counter.innerText = --counter.innerText;
+        }
     }
 })

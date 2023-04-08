@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="roll.css">
 </head>
+
 <body>
     <div class="conteiner">
         <div class="cont">
@@ -16,26 +18,35 @@
                 <div class="numb quantity_size" data-counter>1</div>
                 <div class="plus quantity_size" data-action="plus">+</div>
             </div>
-    
+            <div class="add_basket">добавить в корзину</div>
+
         </div>
         <div class="cont">
             <div class="rol_2"></div>
             <div class="quantity counter-wrapper">
-                <div class="minus quantity_size"data-action="minus">-</div>
-                <div class="numb quantity_size"data-counter>1</div>
-                <div class="plus quantity_size"data-action="plus">+</div>
+                <div class="minus quantity_size" data-action="minus">-</div>
+                <div class="numb quantity_size" data-counter>1</div>
+                <div class="plus quantity_size" data-action="plus">+</div>
             </div>
-    
+
         </div>
-        <div class="rol_3 cont">
-            <div class="quantity counter-wrapper">
-                <div></div>
-                <div></div>
-                <div></div>
+        <div class="basket">
+            <div class="item_img"></div>
+            <div class="item_info">
+                <h5>название</h5>
+                <span>6шт./</span><span>200гр.</span>
+                <div class="quantity_basket">
+                    <div class="minus quantity_size" data-action="minus">-</div>
+                    <div class="numb quantity_size" data-counter>1</div>
+                    <div class="plus quantity_size" data-action="plus">+</div>
+                    <div class="price_item">300р.</div>
+                </div>
             </div>
-    
         </div>
+
+    </div>
     </div>
     <script src="roll.js"></script>
 </body>
+
 </html>
