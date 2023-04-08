@@ -13,16 +13,26 @@
 .rol_1 {
     width: 150px;
     height: 100px;
-    background-image: url(roll_img/1616075176_psfix_201.jpeg);
+    /* background-image: url(roll_img/1616075176_psfix_201.jpeg);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+}
+.rol_1 img {
+    width: inherit;
+    height: inherit;
+    /* object-fit: inherit; */
+}
+.rol_2 img {
+    width: inherit;
+    height: inherit;
+    /* object-fit: inherit; */
 }
 .rol_2 {
     width: 150px;
     height: 100px;
-    background-image: url(roll_img/Seafoods_Sushi_511672.jpg);
+    /* background-image: url(roll_img/Seafoods_Sushi_511672.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 .quantity {
     display: flex;
