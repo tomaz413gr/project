@@ -1,0 +1,32 @@
+//находим элементы для взаимодействия
+// const btnMinus = document.querySelector('[data-action="minus"]');
+// const btnPlus = document.querySelector('[data-action="plus"]');
+// const counter = document.querySelector('[data-counter]');
+//отслеживаем клик по минусу
+// btnMinus.addEventListener('click', function(){
+    //проверяем чтобы текст в счетчике был больше единицы
+    // if (parseInt(counter.innerText) > 1){
+        //при выполнении условия уменьшаем на единицу
+//         counter.innerText = --counter.innerText;
+//     }
+    
+// });
+//отслеживаем клик по плюсу
+// btnPlus.addEventListener('click', function(){
+    //увеличиваем текст при клике на плюс на единицу
+//     counter.innerText = ++counter.innerText;
+// });
+window.addEventListener('click', function(event){
+    if (event.target.dataset.action === 'plus'){
+        
+        const counterWrapper = event.target.closest('.counter-wrapper');
+        const counter = counterWrapper.querySelector('[data-counter]');
+        counter.innerText = ++counter.innerText;
+    }
+    if (event.target.dataset.action === 'minus'){
+        
+        const counterWrapper = event.target.closest('.counter-wrapper');
+        const counter = counterWrapper.querySelector('[data-counter]');
+        counter.innerText = --counter.innerText;
+    }
+})

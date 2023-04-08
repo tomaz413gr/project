@@ -28,6 +28,7 @@
     background-color: lightblue;
 }
 .quantity_size {
+    cursor: pointer;
     width: 10px;
     height: 20px;
 }
