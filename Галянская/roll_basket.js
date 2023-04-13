@@ -14,11 +14,13 @@ window.addEventListener("click", function (event) {
     };
     const itemBasket = basket.querySelector(`[data-id="${productInfo.id}"]`);
     console.log(itemBasket);
+    //проверка наличия товара в корзине
     if (itemBasket) {
       const dataCounter = itemBasket.querySelector("[data-counter]");
       dataCounter.innerText =
         parseInt(dataCounter.innerText) + parseInt(productInfo.counter);
     } else {
+        //код html который вставится в блок корзины если его там нет(с подстановкой значений объекта)
       const cartItemHtml = `<div class="basket" data-id="${productInfo.id}">
         <div class="item_img"><img src=${productInfo.imgSrc} alt="">></div>
         <div class="item_info">
@@ -34,5 +36,6 @@ window.addEventListener("click", function (event) {
     </div>`;
       basket.insertAdjacentHTML("beforeend", cartItemHtml);
     }
+    card.querySelector('[data-counter]').innerText = '1';
   }
 });
