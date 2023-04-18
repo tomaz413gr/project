@@ -54,6 +54,14 @@
     /* margin-bottom: 20px; */
     padding-bottom: 20px;
 }
+.basket_empty {
+    width: 220px;
+    height: 20px;
+    background-color: cadetblue;
+}
+.none {
+    display: none;
+}
 .item_img {
     margin-top: 5px;
     width: 70px;
