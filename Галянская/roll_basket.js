@@ -26,9 +26,9 @@ window.addEventListener("click", function (event) {
         <div class="item_info">
             <h5>${productInfo.title}</h5>
             <span>${productInfo.itensInBox}/</span><span>${productInfo.weight}.</span>
-            <div class="quantity_basket">
+            <div class="quantity_basket counter-wrapper">
                 <div class="minus quantity_size" data-action="minus">-</div>
-                <div class="numb quantity_size" data-counter>1</div>
+                <div class="numb quantity_size" data-counter>${productInfo.counter}</div>
                 <div class="plus quantity_size" data-action="plus">+</div>
                 <div class="price_item">${productInfo.price}.</div>
             </div>

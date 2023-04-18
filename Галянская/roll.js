@@ -29,10 +29,15 @@ if (event.target.dataset.action === 'minus' || event.target.dataset.action === '
     if (event.target.dataset.action === 'minus') {
         if (parseInt(counter.innerText) > 1) {
             counter.innerText = --counter.innerText;
+
+             
         }
-        //проверка что мы кликнули именно по товару находящемуся в корзине
-        if (event.target.closest('.item_info')){
-            console.log('работает');
+        // проверка что мы кликнули именно по товару находящемуся в корзине
+
+        else if (event.target.closest('.basket_content') && parseInt(counter.innerText) === 1){
+            event.target.closest('.basket').remove();
         }
+       
+       
     }
 })
