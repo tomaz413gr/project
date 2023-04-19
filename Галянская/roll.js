@@ -37,6 +37,8 @@ if (event.target.dataset.action === 'minus' || event.target.dataset.action === '
         else if (event.target.closest('.basket_content') && parseInt(counter.innerText) === 1){
             //удаляем товар из корзины при нажатии на минус
             event.target.closest('.basket').remove();
+
+            //отображение статуса корзины (корзина пуста)
             toggleCartStatus();
         }
        
