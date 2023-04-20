@@ -36,7 +36,7 @@ window.addEventListener("click", function (event) {
             </div>
         </div>
     </div>`;
-      basket.insertAdjacentHTML("beforeend", cartItemHtml);
+      basket.insertAdjacentHTML("afterbegin", cartItemHtml);
       
     }
     card.querySelector('[data-counter]').innerText = '1';
