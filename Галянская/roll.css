@@ -59,12 +59,10 @@
     height: 20px;
     background-color: cadetblue;
 }
-.none {
-    display: none;
-}
+
 
 .orderForm {
-    /* display: none; */
+    
     width: 220px;
     height: 30px;
     background-color: darkgray;
@@ -72,6 +70,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.none {
+    display: none;
 }
 .item_img {
     margin-top: 5px;
