@@ -46,6 +46,12 @@
 .numb {
     background-color: cadetblue;
 }
+.basketWrapper p {
+margin-top: 10px;
+}
+.basketWrapper span {
+color: brown;
+}
 .basket {
     background-color: darkgray;
     width: 220px;
