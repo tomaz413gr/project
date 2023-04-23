@@ -44,4 +44,7 @@ if (event.target.dataset.action === 'minus' || event.target.dataset.action === '
        
        
     }
-})
+    // if (event.target.hasAttribute('data-action') && event.target.closest('.basket')) {
+    //     basketCalc();
+    // }
+});
