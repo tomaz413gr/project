@@ -2,10 +2,7 @@
     margin: 0 auto;
     padding: 0;
 }
-.cont {
-    /* width: 200px;
-    height: 500px; */
-}
+
 .conteiner  {
     display: flex;
     padding-top: 10px;
@@ -101,4 +98,7 @@
     /* height: 20px; */
     background-color: coral;
     border-radius: 2px;
+}
+.Delivery {
+    margin-top: 10px;
 }
