@@ -41,5 +41,6 @@ window.addEventListener("click", function (event) {
 
     //отображение статуса корзины (корзина пуста)
     toggleCartStatus();
+    basketCalculateAndDelivery();
   }
 });

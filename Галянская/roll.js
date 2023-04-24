@@ -51,7 +51,7 @@ window.addEventListener('click', function (event) {
     if (event.target.hasAttribute('data-action') && event.target.closest('.basket')){
 
         //запуск пересчета общей стоимости
-        basketCalculate();
+        basketCalculateAndDelivery();
 
     }
 });

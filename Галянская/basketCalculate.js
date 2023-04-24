@@ -1,7 +1,8 @@
 
-function basketCalculate() {
+function basketCalculateAndDelivery() {
     let totalPrice = 0;
     const basket = document.querySelectorAll('.basket');
+    const deliveryCoast = document.querySelector('.deliveryCoast');
 
     //находим элемент итого
     const totalEl = document.querySelector('.totalPrice');
@@ -15,5 +16,13 @@ function basketCalculate() {
     
     //отображаем общую стоимость на странице
     totalEl.innerText = totalPrice;
+
+    if (totalPrice >= 600) {
+        deliveryCoast.classList.add('free');
+        deliveryCoast.innerText = 'бесплатно';
+    } else {
+        deliveryCoast.classList.remove('free');
+        deliveryCoast.innerText = '250 р.';
+    }
 }
 

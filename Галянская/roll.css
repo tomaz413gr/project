@@ -46,11 +46,14 @@
 .basketWrapper p {
 margin-top: 10px;
 }
-.basketWrapper span {
+.basketWrapper .totalPrice {
 color: brown;
 }
 .delivery {
     margin-top: 10px;
+}
+.free {
+    color: green;
 }
 .basket {
     background-color: darkgray;
