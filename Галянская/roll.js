@@ -46,6 +46,7 @@ window.addEventListener('click', function (event) {
 
     }
 
+
     //условие клика по плюсу или минусу именно в корзине
     if (event.target.hasAttribute('data-action') && event.target.closest('.basket')){
 

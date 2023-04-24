@@ -20,13 +20,12 @@ window.addEventListener("click", function (event) {
       dataCounter.innerText =
         parseInt(dataCounter.innerText) + parseInt(productInfo.counter);
     } else {
-
-        //код html который вставится в блок корзины если его там нет(с подстановкой значений объекта)
+      //код html который вставится в блок корзины если его там нет(с подстановкой значений объекта)
       const cartItemHtml = `<div class="basket" data-id="${productInfo.id}">
         <div class="item_img"><img src=${productInfo.imgSrc} alt=""></div>
         <div class="item_info">
             <h5>${productInfo.title}</h5>
-            <span data-itens-in-box>${productInfo.itensInBox}/</span><span>${productInfo.weight}</span>
+            <span>${productInfo.itensInBox}/</span><span>${productInfo.weight}.</span>
             <div class="quantity_basket counter-wrapper">
                 <div class="minus quantity_size" data-action="minus">-</div>
                 <div class="numb quantity_size" data-counter>${productInfo.counter}</div>
@@ -34,14 +33,13 @@ window.addEventListener("click", function (event) {
                 <div class="price_item">${productInfo.price}</div>
             </div>
         </div>
+      
     </div>`;
       basket.insertAdjacentHTML("afterbegin", cartItemHtml);
-      
     }
-    card.querySelector('[data-counter]').innerText = '1';
+    card.querySelector("[data-counter]").innerText = "1";
 
     //отображение статуса корзины (корзина пуста)
     toggleCartStatus();
-    basketCalculate();
   }
 });

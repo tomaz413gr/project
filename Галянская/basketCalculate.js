@@ -1,3 +1,4 @@
+
 function basketCalculate() {
     let totalPrice = 0;
     const basket = document.querySelectorAll('.basket');
@@ -15,3 +16,4 @@ function basketCalculate() {
     //отображаем общую стоимость на странице
     totalEl.innerText = totalPrice;
 }
+
