@@ -52,6 +52,9 @@ margin-top: 10px;
 .basketWrapper span {
 color: brown;
 }
+.delivery {
+    margin-top: 10px;
+}
 .basket {
     background-color: darkgray;
     width: 220px;
