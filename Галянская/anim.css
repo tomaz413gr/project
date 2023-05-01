@@ -1,0 +1,20 @@
+.cont {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.anim_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: darkslateblue;
+    transition: 2s;
+}
+.move {
+    transform: translateX(400%);
+}
+.click_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(224, 228, 31);
+}
