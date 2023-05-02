@@ -1,0 +1,16 @@
+/* * {
+    margin: 0 auto;
+} */
+.block1 {
+    margin-top: 10px;
+    margin-right: 5px;
+width: 300px;
+height: 100px;
+background-color: black;
+}
+.block2 {
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+}
