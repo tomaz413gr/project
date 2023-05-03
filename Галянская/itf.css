@@ -909,7 +909,7 @@ input {
 
 .footer_conteiner {
   margin: 0 auto;
-  height: 250px;
+  
   max-width: 1100px;
   display: flex;
   justify-content: space-around;
@@ -976,11 +976,11 @@ input {
 }
 
 .icons_write {
-  width: 70px;
-  height: 70px;
-  position: sticky;
-  left: 80%;
-  bottom: 20%;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  left: 90%;
+  bottom: 70px;
 }
 
 .anim_circle {
@@ -988,8 +988,8 @@ input {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color:  rgba(29, 77, 112, 1);
   transition: 0.5s;
@@ -1005,8 +1005,8 @@ input {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color:  rgba(100, 204, 110, 1);
   transition: 0.5s;
@@ -1022,8 +1022,8 @@ input {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color:  rgba(57, 134, 202, 1);
   transition: 0.5s;
@@ -1039,8 +1039,8 @@ input {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color:  rgba(76, 101, 137, 1);
   transition: 0.5s;
@@ -1057,8 +1057,12 @@ input {
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: rgba(255, 204, 0, 1);
+}
+#SVGmator__hdef9q1683098938759{
+  width:30px;
+  height: 30px;
 }
