@@ -10,6 +10,5 @@ clickCircle.addEventListener('click', function () {
     anim_circle3.classList.toggle('move3');
     anim_circle4.classList.toggle('move4');
 })
-document.querySelector('button').addEventListener('click', function(){
-    document.querySelector('#SVGmator__c1dux1560067354551').contentWindow.postMessage('play', '*')
-  });
+// document.querySelector('#SVGmator__0yjzzh1683177589995').contentWindow.postMessage('play', '*');
+// document.querySelector('#SVGmator__0yjzzh1683177589995').contentWindow.postMessage('stop', '*');
