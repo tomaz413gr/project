@@ -89,7 +89,7 @@ display: inline-block;
 	font-weight: bolder;
 	font-size: 80px;
 	color:transparent;
-	background: url(../img/loon-image-high.jpg) center center no-repeat;
+	background: url(../img/loon-image-hig.jpg) center center no-repeat;
 	-webkit-background-clip: text;
 	animation: animate 10s infinite linear;
 }
@@ -294,4 +294,12 @@ label span {
 	margin-top: 80px;
 	border-radius: 30px;
 	
+}
+.item::after {
+	content: "";
+	display: block;
+	width: 200px;
+	height: 1px;
+	background-color: #ac0606;
+	margin: 20px auto 20px;
 }
