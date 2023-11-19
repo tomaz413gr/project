@@ -243,6 +243,11 @@ label span {
 	padding: 25px;
 	
 }
+.img__photo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 .item2 {
 	background: #4281295b;
 	padding: 25px;
