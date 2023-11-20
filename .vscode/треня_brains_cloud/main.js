@@ -25,13 +25,21 @@ $(function () {
     $('[data-scroll]').on('click', function (event) {
         event.preventDefault();
         let elementId = $(this).data('scroll');
-        console.log(elementId);
+        nav.removeClass('show');
         let elementOffset = $(elementId).offset().top;
         $("html, body").animate({
-            scrollTop: elementOffset
+            scrollTop: elementOffset + 5
         }), 700;
 
     });
+    let nav = $('#nav');
+    let navToggle = $('#navToggle');
+    navToggle.on('click', function (event) {
+        event.preventDefault();
+        nav.toggleClass("show");
+
+
+    })
 
 
 
