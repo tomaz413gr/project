@@ -126,3 +126,44 @@ a {
     color: #FFF;
     line-height: 1.4;
 }
+.menu {
+    background-color: #fff;
+}
+.inner__menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.menu__link {
+text-decoration: none;
+color: #030303;
+font-size: 15px;
+font-weight: 600;
+line-height: 1.4;
+
+}
+.menu__link:hover {
+    text-decoration: underline;
+}
+.menu__input {
+    padding: 9px 0 9px 15px;
+    border: solid 1px #B3B3B3;
+}
+.menu__input ::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #B3B3B3;
+
+}
+input:invalid {border-color: red;}
+input:valid {border-color: green;}
+
+.menu__btn {
+    padding: 8px 14px;
+    background-color: #FC0;
+    color: #030303;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
