@@ -593,7 +593,7 @@ a {
 
 .work__card {
     margin: 0 auto;
-    width: 535px;
+    width: 33.43rem;
     box-shadow: 10px 10px 20px 0px rgba(172, 172, 172, 0.25);
 }
 
@@ -605,12 +605,13 @@ a {
 }
 
 .card__name {
+    width: calc(100% - 6.25rem);
     display: flex;
     align-items: center;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .black__stick {
