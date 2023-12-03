@@ -1,20 +1,62 @@
-.wrapper {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    
+body {
+    font-size: 1.375rem;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 400;
+    position: relative;
 }
-.zone__1 {
-    width: 500px;
-    height: 200px;
-    border: solid 1px red;
-    margin-bottom: 20px;
-}
-.zone__2 {
-    width: 500px;
-    height: 200px;
-    border: solid 1px red;
-}
-.zone__2 img {
 
+.header {width: 100%;
+    position: absolute;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    max-width: 78.125rem;
+    margin: 0 auto;
+
+}
+
+.header__inner {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem 0 .625rem 0;
+}
+
+.logo {
+    width: 187px;
+    height: 68px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.0625rem;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+
+}
+
+.mainInfo {
+    background-image: url(img/fon_shapka_1\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info__name {
+    font-family: Athelas;
+    font-size: 235px;
+    line-height: 14.375rem;
+    color: rgba(255, 255, 255, 0.08);
+    padding: 13.125rem 0 13.125rem 0px;
 }
