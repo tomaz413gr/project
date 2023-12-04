@@ -64,7 +64,8 @@ a:hover{
     .header {
         width: 100%;
         position: fixed;
-        top: 10px;
+        z-index: 1;
+        top: 20px;
     }
     .header__inner {
         display: flex;

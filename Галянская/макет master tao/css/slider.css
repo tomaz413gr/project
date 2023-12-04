@@ -1,4 +1,5 @@
 .bgcarusel {
+    padding-top: 65px;
     background-image: url(img/img\ фон\ для\ слайдера.png);
     min-height: 300px;
     max-height: 700px;
@@ -47,7 +48,7 @@ article img {
 
 #desktop:checked~#slider {
     /*размер всего слайдера*/
-    max-width: 960px;
+    max-width: 1820px;
     /*максимальнная длинна*/
 }
 
@@ -170,4 +171,66 @@ a {
 #controls label {
     /*прозрачность стрелок при отводе курсора*/
     transition: opacity 0.2s ease-out;
+}
+
+
+/* .slide__1 {
+    background-image: url(../img/slid1.png);
+} */
+
+.slid1__content {
+    max-width: 463px;
+    position: absolute;
+    top: 163px;
+    left: 340px;
+}
+.rel {
+    position: relative;
+}
+.rel2 {
+    position: relative;
+}
+.rel3 {
+    position: relative;
+}
+.rel4 {
+    position: relative;
+}
+.rel5 {
+    position: relative;
+}
+.slid2__content {
+    max-width: 463px;
+    position: absolute;
+    top: 163px;
+    left: 340px;
+}
+.slide__title {
+    font-size: "proxima-nova-bold";
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+text-transform: uppercase;
+text-align: left;
+}
+.slide__info {
+    max-width: 320px;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.3;
+text-align: left;
+padding: 8px 0 37px 0;
+}
+.slider__btn {
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 293px;
+    padding: 23px 0 23px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.slider__btn img{
+width: 27px;
+height: 27px;
 }
