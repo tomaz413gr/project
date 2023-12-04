@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "RalewayRegular";  
+    src: url("../fonts/RalewayRegular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
+body {
+    font-family: Proxima Nova;
+    background-color: #282B38;
+    color: #fff;
+}
+
