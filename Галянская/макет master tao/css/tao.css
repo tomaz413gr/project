@@ -97,6 +97,23 @@ a:hover{
         display: flex;
         gap: 25px;
     }
+    .section__title {
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+        max-width: 656px;
+        margin-top: 420px;
+        margin-bottom: 62px;
+    }
+    /* .section__title span {
+        display: inline-block;
+        width: 85px;
+        height: 2px;
+        background-color: #89C249;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    } */
 
 
 
