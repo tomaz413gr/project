@@ -132,22 +132,26 @@ a:hover {
 
 
 .price__inner {
-    
+
     display: flex;
     flex-wrap: wrap;
-    
+
 
 }
+
 .input__wrapper {
     box-sizing: border-box;
     max-width: 626px;
-    display: flex;
-    /* flex-wrap: wrap; */
-    gap: 30px;
     padding: 70px 50px 40px 50px;
     background-color: #363A4D;
     border-radius: 30px;
 }
+
+.flex__wrapper {
+    display: flex;
+    gap: 30px;
+}
+
 .input__title {
     font-family: "proxima-nova-regular";
     font-size: 15px;
@@ -176,30 +180,101 @@ a:hover {
 
 }
 
-#cb1 {
-    /* display: block; */
-    width: 24px;
-    height: 24px;
-}
-.input__inner1 {
-    /* flex-basis: 50%; */
-    /* width: 50%; */
-}
-.input__inner2 {
-    /* flex-basis: 50%; */
-    /* width: 50%; */
+.check__style {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
 
-.input__inner1 label {
-/* display: inline-block; */
+.check__style+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+}
+
+.check__style+label:not(:last-child) {
+    margin: 20px 0;
+}
+
+.check__style+label::before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #282B38;
     font-family: "proxima-nova-regular";
     font-size: 15px;
     font-weight: 600;
     line-height: 1.2;
-    margin-left: 9px;
+    margin-right: 9px;
+
 
 
 }
+
+.check__style:checked+label::before {
+    color: #282B38;
+    background-image: url(../img/checked\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили при наведении курсора на checkbox */
+.check__style-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.check__style:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+/* .check__style:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  } */
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.check__style:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.check__style:disabled+label::before {
+    background-color: #e9ecef;
+}
+
+.calculate__span {
+    color: #E58D35;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    margin-left: 50px;
+
+}
+
+.downloadFoto__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.delete__foto {
+    color: #E53535;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration-line: underline;
+}
+
 
 
 

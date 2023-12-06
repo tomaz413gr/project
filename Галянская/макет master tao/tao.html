@@ -147,19 +147,27 @@
                 
             <div class="price__inner">
                 <div class="input__wrapper">
-                    <div class="input__inner1">
-                        <div class="input__title">Категория товара:</div>
-                        <input class="input__price" placeholder="Категория товара" type="text" name="" id="">
-                        <div class="input__title">Вес груза (кг):</div>
-                        <input class="input__price" placeholder="Введите вес" type="text" name="" id="">
-                        <input type="checkbox" id="cb1"><label for="cb1">Страховка</label><br>
-                        <input type="checkbox" id="cb1"><label for="cb1">Таможенное оформление</label>
+                    <div class="flex__wrapper">
+                        <div class="input__inner1">
+                            <div class="input__title">Категория товара:</div>
+                            <input class="input__price" placeholder="Категория товара" type="text" name="" id="">
+                            <div class="input__title">Вес груза (кг):</div>
+                            <input class="input__price" placeholder="Введите вес" type="text" name="" id="">
+                            <input class="check__style" type="checkbox" id="cb1" name="price" value="страховка"><label for="cb1">Страховка</label>
+                            <input class="check__style" type="checkbox" id="cb2" name="price" value="таможенное оформление"><label for="cb2">Таможенное оформление</label>
+                        </div>
+                        <div class="input__inner2">
+                            <div class="input__title">Стоимость груза:</div>
+                            <input class="input__price" placeholder="Введите стоимость" type="text" name="" id="">
+                            <div class="input__title">Объем груза (м3): <a href="#"><span class="calculate__span">Рассчитать</span></a></div>
+                            <input class="input__price" placeholder="Введите объем" type="text" name="" id="">
+                            <div class="input__title">Код ТН ВЭД:</div>
+                            <input class="input__price" placeholder="Введите код" type="text" name="" id="">
+                        </div>
                     </div>
-                    <div class="input__inner2">
-                        <div class="input__title">Категория товара:</div>
-                        <input class="input__price" placeholder="Категория товара" type="text" name="" id="">
-                        <div class="input__title">Вес груза (кг):</div>
-                        <input class="input__price" placeholder="Введите вес" type="text" name="" id="">
+                    <div class="downloadFoto__title">
+                        <span style="font-size: 15px;">фотография.jpeg</span>
+                        <a href="#" class="delete__foto">Удалить фото</a>
                     </div>
                 </div>
             </div>
