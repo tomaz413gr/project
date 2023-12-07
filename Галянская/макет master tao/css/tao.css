@@ -120,7 +120,10 @@ a:hover {
     max-width: 686px;
     margin-top: 420px;
     margin-bottom: 62px;
+    
+    
 }
+
 
 .section__title span {
     display: inline-block;
@@ -164,6 +167,7 @@ a:hover {
     margin-bottom: 6px;
 
 }
+
 
 .input__price::placeholder {
     color: #CBCBCB;
@@ -354,7 +358,19 @@ a:hover {
     font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
-    margin-bottom: 72px;
+    margin-bottom: 12px;
+}
+.span__orange {
+    width: 85px;
+    height: 2px;
+    background-color: #E58D35;
+    margin-bottom: 48px;
+   
+}
+.flex__titleHR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .why__wrapper {
@@ -406,6 +422,14 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.2;
 padding: 0 30px;
+}
+.span__green {
+    
+    width: 85px;
+    height: 2px;
+    background-color: #89C249;
+    margin-bottom: 49px;
+    
 }
 
 
