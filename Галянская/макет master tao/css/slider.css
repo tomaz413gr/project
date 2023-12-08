@@ -227,8 +227,8 @@ text-align: left;
 padding: 8px 0 37px 0;
 }
 .slider__btn {
+    font-family: "proxima-nova-semibold";
     font-size: 16px;
-    font-weight: 600;
     max-width: 293px;
     padding: 23px 0 23px 0;
     display: flex;
