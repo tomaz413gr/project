@@ -430,13 +430,17 @@ a:hover {
 
 }
 .container__slick {
-    width: 100%;
+    /* width: 100%; */
     max-width: 1200px;
     margin: 0 auto;
     
 }
+/* .sliders {
+    margin: 0 auto;
+    
+} */
 .slider__block {
-    width: 360px;
+    width: auto;
 }
 /* .slider__wrapper {
     width: 360px;
@@ -452,10 +456,10 @@ a:hover {
     transform: translateY(-50%);
 }
 .btn__sliderleft {
-
+left: -50px;
 }
 .btn__sliderright {
-    
+    right: -80px;
 }
 
 
