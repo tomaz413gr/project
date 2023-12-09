@@ -1,10 +1,18 @@
 $(document).ready(function () {
     $('.sliders').slick({
+        dots: false,
         infinite: true,
-        slidesToShow: 3,
+        speed: 300,
+        slidesToShow: 4,
         slidesToScroll: 1,
-
-        prevArrow:'<button class="btn__arrow btn__sliderleft"><img src="img/left.png" alt=""></button>',
-        nextArrow:'<button class="btn__arrow btn__sliderright"><img src="img/right.png" alt=""></button>',
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
 });
