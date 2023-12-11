@@ -11,7 +11,7 @@ $(document).ready(function () {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false
+                    arrows: false,
                 }
             }
         ]
@@ -23,7 +23,31 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true
+        arrows: true,
+        
+
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    arrows: false
+                }
+            }
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 2
+            //     }
+            // },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+        ]
     })
 
 
