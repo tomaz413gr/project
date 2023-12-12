@@ -41,6 +41,7 @@ a {
 a:hover {
     color: #fff;
 }
+
 button {
     border: none;
 }
@@ -94,7 +95,7 @@ button {
     box-shadow: 0 0 0 #E58D35;
     transition: all .1s ease;
     margin: 0 15px;
-    
+
 }
 
 .btn__other:hover {
@@ -162,16 +163,19 @@ button {
     border: none;
     cursor: pointer;
 }
+
 .slider__main .slick-arrow.slick-next {
     right: 100px;
     background: url(../img/right.png) center center no-repeat;
     background-size: cover;
 }
+
 .slider__main .slick-arrow.slick-prev {
     left: 100px;
     background: url(../img/left.png) center center no-repeat;
     background-size: cover;
 }
+
 .slider__main .slick-dots {
     display: flex;
     justify-content: center;
@@ -180,25 +184,28 @@ button {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-} 
+}
+
 .slider__main .slick-dots li {
-list-style: none;
-padding: 0 8px;
+    list-style: none;
+    padding: 0 8px;
 
 }
+
 .slider__main .slick-dots button {
-width: 7px;
-height: 7px;
-font-size: 0;
-background-color: transparent;
-border-radius: 50%;
-border: none;
-cursor: pointer;
-border: solid 1px #fff;
+    width: 7px;
+    height: 7px;
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    border: solid 1px #fff;
 
 }
+
 .slider__main .slick-dots li.slick-active button {
-background-color: #fff;
+    background-color: #fff;
 
 }
 
@@ -272,6 +279,11 @@ background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.btnSlider__centr {
+    display: flex;
+    justify-content: start;
 }
 
 .btn__other.sliderSlick__btn img {
@@ -751,15 +763,22 @@ background-color: #fff;
     }
 }
 
-@media (max-width:376px) {
-   .slid1__content {
-    top: 10%;
-    left: 0;
-   }
-   .slide__info {
-    text-align: center;
-   }
-   .slide__title {
-    text-align: center;
-   }
+@media (max-width:508px) {
+    .slid1__content {
+        top: 10%;
+        left: 0;
+    }
+
+    .slide__info {
+        text-align: center;
+    }
+
+    .slide__title {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .btnSlider__centr {
+        justify-content: center;
+    }
 }
