@@ -41,6 +41,9 @@ a {
 a:hover {
     color: #fff;
 }
+button {
+    border: none;
+}
 
 .container {
     width: 100%;
@@ -87,11 +90,11 @@ a:hover {
     background-color: #e58d35;
     border-radius: 90px;
     font-weight: 600;
-    /* display: flex;
-    align-items: center; */
     cursor: pointer;
     box-shadow: 0 0 0 #E58D35;
     transition: all .1s ease;
+    margin: 0 15px;
+    
 }
 
 .btn__other:hover {
@@ -103,6 +106,12 @@ a:hover {
     font-family: "proxima-nova-semibold";
     font-size: 15px;
     padding: 14px 27px;
+    color: #e9e5e5;
+    background-color: #e58d35;
+    border-radius: 90px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #E58D35;
+    transition: all .1s ease;
 }
 
 .nav {
@@ -135,7 +144,7 @@ a:hover {
     overflow: hidden;
 }
 
-.slider__main-item img {
+.slider__main-item>img {
     width: 100%;
     min-height: 700px;
     object-fit: none;
@@ -201,11 +210,13 @@ background-color: #fff;
 
 
 .slid1__content {
-    max-width: 463px;
     position: absolute;
-    top: 163px;
-    left: 340px;
+    z-index: 2;
+    max-width: 463px;
+    top: 20%;
+    left: 13vw;
 }
+
 
 .rel {
     position: relative;
@@ -227,12 +238,12 @@ background-color: #fff;
     position: relative;
 }
 
-.slid2__content {
+/* .slid2__content {
     max-width: 463px;
     position: absolute;
     top: 163px;
     left: 340px;
-}
+} */
 
 .slide__title {
     font-size: "proxima-nova-bold";
@@ -241,28 +252,29 @@ background-color: #fff;
     line-height: 1.2;
     text-transform: uppercase;
     text-align: left;
+    padding: 0 20px;
 }
 
 .slide__info {
-    max-width: 320px;
+    font-family: "proxima-nova-regular";
     font-size: 20px;
-    font-weight: 400;
     line-height: 1.3;
     text-align: left;
-    padding: 8px 0 37px 0;
+    padding: 0 20px;
+    margin: 8px 0 37px 0;
 }
 
-.slider__btn {
+.sliderSlick__btn {
     font-family: "proxima-nova-semibold";
     font-size: 16px;
-    max-width: 293px;
-    padding: 23px 0 23px 0;
+    width: 293px;
+    padding: 23px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.slider__btn img {
+.btn__other.sliderSlick__btn img {
     width: 27px;
     height: 27px;
 }
@@ -730,11 +742,24 @@ background-color: #fff;
         display: none;
     }
 
-    .btn__other {
+    .header__btn {
         display: none;
     }
 
     .burger {
         display: flex;
     }
+}
+
+@media (max-width:376px) {
+   .slid1__content {
+    top: 10%;
+    left: 0;
+   }
+   .slide__info {
+    text-align: center;
+   }
+   .slide__title {
+    text-align: center;
+   }
 }
