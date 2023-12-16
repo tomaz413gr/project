@@ -1,0 +1,17 @@
+.slider__item {
+    
+    
+}
+.sliders {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+.wrapper {
+    width: 250px;
+}
+.wrapper img {
+width: 100%;
+}

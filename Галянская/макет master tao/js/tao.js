@@ -1,10 +1,54 @@
 $(document).ready(function () {
     $('.sliders').slick({
+        dots: false,
         infinite: true,
+        speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
-
-        prevArrow:'<button class="btn__arrow btn__sliderleft"><img src="img/left.png" alt=""></button>',
-        nextArrow:'<button class="btn__arrow btn__sliderright"><img src="img/right.png" alt=""></button>',
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                }
+            }
+        ]
     });
+
+    $('.slider__main').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        
+
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    arrows: false
+                }
+            }
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 2
+            //     }
+            // },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+        ]
+    })
+
+
 });
