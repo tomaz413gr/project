@@ -26,7 +26,7 @@ body {
 }
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -143,7 +143,7 @@ button {
 
 .slider__main-item {
     overflow: hidden;
-    
+
 }
 
 .slider__main-item>img {
@@ -282,10 +282,9 @@ button {
     font-family: "proxima-nova-bold";
     padding: 0 15px;
     font-size: 36px;
-
     text-transform: uppercase;
     line-height: 1.2;
-    max-width: 686px;
+    text-align: start;
     margin-top: 90px;
     margin-bottom: 62px;
 
@@ -306,16 +305,17 @@ button {
 
 .price__inner {
 
-    display: flex;
-    flex-wrap: wrap;
+
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     margin-bottom: 95px;
 
 
 }
 
 .input__wrapper {
+
     position: relative;
-    box-sizing: border-box;
     max-width: 626px;
     padding: 70px 50px 40px 50px;
     background-color: #363A4D;
@@ -325,6 +325,18 @@ button {
 .flex__wrapper {
     display: flex;
     gap: 30px;
+}
+
+.input__inner1 {
+    flex-basis: 50%;
+}
+
+.input__inner2 {
+    flex-basis: 50%;
+}
+
+.input__container {
+    text-align: start;
 }
 
 .input__title {
@@ -348,11 +360,13 @@ button {
 
 .input__price {
     border-radius: 10px;
-    width: 248px;
+    min-width: 248px;
+    max-width: 400px;
     padding: 20px;
     margin-bottom: 20px;
 
 }
+
 
 .check__style {
     position: absolute;
@@ -361,7 +375,7 @@ button {
 }
 
 .check__style+label {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     user-select: none;
 
@@ -468,7 +482,7 @@ button {
     position: absolute;
     left: 0;
     top: 0px;
-    width: 523px;
+    max-width: 523px;
     background-color: red;
     font-size: 15px;
     padding: 14px 0;
@@ -729,6 +743,50 @@ button {
 
 
 
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .input__man {
+        display: none;
+    }
+
+    .section__title {
+        text-align: center;
+    }
+
+    .price__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .input__inner1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+
+    .input__inner2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+
+}
+
+
 @media (max-width: 920px) {
     .nav {
         display: none;
@@ -741,13 +799,13 @@ button {
     .burger {
         display: flex;
     }
-}
 
-@media (max-width:867px) {
     .input__man {
         display: none;
     }
 }
+
+
 
 @media (max-width:508px) {
     .slid1__content {
@@ -767,4 +825,10 @@ button {
     .btnSlider__centr {
         justify-content: center;
     }
+}
+
+@media (max-width:430px) {
+   .input__wrapper {
+    padding: 50px 30px 20px;
+   }
 }
