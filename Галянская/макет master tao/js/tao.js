@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    // Sliders
+
     $('.sliders').slick({
         dots: false,
         infinite: true,
@@ -24,7 +27,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        
+
 
         responsive: [
             {
@@ -50,5 +53,13 @@ $(document).ready(function () {
         ]
     })
 
+    // Burger__menu
+
+
 
 });
+const burger = document.querySelector('.burger');
+const burgerMenu = document.querySelector('.burger__menu');
+burger.addEventListener('click', ()=> {
+    burgerMenu.classList.toggle('menu__open');
+})

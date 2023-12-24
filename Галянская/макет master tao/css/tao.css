@@ -20,7 +20,7 @@
 }
 
 body {
-    
+
     font-family: "proxima-nova-regular";
     background-color: #282B38;
     color: #fff;
@@ -63,7 +63,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     display: none;
-
+    cursor: pointer;
 
 
 }
@@ -73,6 +73,15 @@ button {
     height: 2px;
     background-color: #ffffff;
 }
+.burger__menu {
+    display: none;
+}
+
+/* .menu__rel {
+    position: relative;
+} */
+
+
 
 .header {
     width: 100%;
@@ -82,7 +91,6 @@ button {
     top: 0;
     left: 0;
     z-index: 11;
-    /* top: 20px; */
 }
 
 .header__inner {
@@ -784,6 +792,11 @@ input[type="file"] {
         flex-basis: 100%;
     }
 
+    .btn__other.sliderSlick__btn {
+        margin: 0 auto;
+
+    }
+
 
 }
 
@@ -799,6 +812,40 @@ input[type="file"] {
 
     .burger {
         display: flex;
+    }
+
+    .burger__menu {
+        width: 100%;
+        
+        
+        background: #363A4D;
+        box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        position: absolute;
+        z-index: 10;
+        top: 84px;
+        left: 0;
+        transform: translateY(-200%);
+        transition: transform .9s ease;
+
+    }
+
+    .menu__open {
+
+        transform: translateY(0%);
+    }
+
+    .burger__menu a {
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        line-height: 2.22;
+    }
+
+    .burger__menu a:hover {
+        color: #979595;
     }
 
 }
