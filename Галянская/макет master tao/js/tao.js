@@ -52,12 +52,25 @@ $(document).ready(function () {
             // }
         ]
     })
+    
+    $('.slider__why').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+    })
 
-    // Burger__menu
+
+
 
 
 
 });
+
+    // Burger__menu
+
 const burger = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.burger__menu');
 burger.addEventListener('click', ()=> {

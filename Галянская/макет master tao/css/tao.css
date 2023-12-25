@@ -77,11 +77,6 @@ button {
     display: none;
 }
 
-/* .menu__rel {
-    position: relative;
-} */
-
-
 
 .header {
     width: 100%;
@@ -223,6 +218,76 @@ button {
     background-color: #fff;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slider__why */
+.slider__why {
+    position: relative;
+    padding-bottom: 60px;
+}
+.why__itemList {
+    text-align: -webkit-center;
+    
+}
+.slider__why .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.slider__why .slick-dots li {
+    list-style: none;
+    padding: 0 8px;
+
+}
+
+.slider__why .slick-dots button {
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    border: solid 1px #fff;
+
+}
+
+.slider__why .slick-dots li.slick-active button {
+    background-color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
 
 .slid1__content {
     position: absolute;
