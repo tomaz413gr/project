@@ -8,13 +8,22 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         responsive: [
             {
-                breakpoint: 800,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     arrows: false,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true
                 }
             }
         ]
@@ -52,7 +61,7 @@ $(document).ready(function () {
             // }
         ]
     })
-    
+
     $('.slider__why').slick({
         dots: true,
         infinite: true,
