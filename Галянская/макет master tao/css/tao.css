@@ -74,8 +74,20 @@ button {
     background-color: #ffffff;
 }
 
+.menu__rel {
+    position: relative;
+}
+
 .burger__menu {
     display: none;
+    width: 100%;
+    background: #363A4D;
+    box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+    flex-direction: column;
+    padding: 20px 0;
+    transform: translateY(-100%);
+
+
 }
 
 
@@ -698,16 +710,17 @@ input[type="file"] {
 .sliders {
     position: relative;
     display: flex;
-    
-    
+
+
 }
+
 .slider__item {
     padding: 0 15px 0;
     width: 360px;
 }
 
 .slider__wrapper {
-    
+
     border-radius: 20px;
     background-color: #363A4D;
 }
@@ -715,6 +728,7 @@ input[type="file"] {
 .slider__wrapper img {
     width: 100%;
 }
+
 .sliders .slick-dots {
     display: flex;
     justify-content: center;
@@ -914,27 +928,42 @@ input[type="file"] {
         display: flex;
     }
 
-    .burger__menu {
-        width: 100%;
-
-
-        background: #363A4D;
-        box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+    .burger__menu.menu__open {
         display: flex;
-        flex-direction: column;
-        padding: 20px 0;
-        position: absolute;
+        position: fixed;
         z-index: 10;
-        top: 84px;
-        left: 0;
-        transform: translateY(-200%);
-        transition: transform .9s ease;
+        animation: fadeInFromNone 0.5s ease-in-out;
+        animation-fill-mode: forwards;
 
     }
 
-    .menu__open {
+    @keyframes fadeInFromNone {
+        0% {
+            transform: translateY(-100%);
+        }
 
-        transform: translateY(0%);
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    .burger__menu {
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        animation: fadeOutFromBlock 0.5s ease-in-out;
+        
+    }
+
+    @keyframes fadeOutFromBlock {
+        0% {
+            transform: translateY(0%);
+            
+        }
+
+        100% {
+            transform: translateY(-100%);
+        }
     }
 
     .burger__menu a {
