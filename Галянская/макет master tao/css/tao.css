@@ -715,6 +715,39 @@ input[type="file"] {
 .slider__wrapper img {
     width: 100%;
 }
+.sliders .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -11%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.sliders .slick-dots li {
+    list-style: none;
+    padding: 0 8px;
+
+}
+
+.sliders .slick-dots button {
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    border: solid 1px #fff;
+
+}
+
+.sliders .slick-dots li.slick-active button {
+    background-color: #fff;
+
+}
 
 .sliders .slick-arrow {
     width: 30px;
@@ -729,7 +762,7 @@ input[type="file"] {
 }
 
 .sliders .slick-arrow.slick-next {
-    right: -50px;
+    right: -75px;
     background: url(../img/right.png) center center no-repeat;
     background-size: cover;
 }
