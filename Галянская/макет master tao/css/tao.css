@@ -853,8 +853,24 @@ input[type="file"] {
 }
 
 
+/* Section__sliders--second */
 
+.sliders__second {
+    max-width: 1820px;
+    margin: 0 auto;
+    
+    border-radius: 20px;
+    background: linear-gradient(0deg, #363A4D 0%, #363A4D 100%), #F7F7F7;
+    margin-top: 100px;
+    margin-bottom: 62px;
+    padding: 100px 340px;
 
+}
+
+.card__info--sliderSecond {
+font-size: 15px;
+line-height: 1.2; /* 18.675px */
+}
 
 
 
@@ -952,13 +968,13 @@ input[type="file"] {
         position: fixed;
         z-index: 10;
         animation: fadeOutFromBlock 0.5s ease-in-out;
-        
+
     }
 
     @keyframes fadeOutFromBlock {
         0% {
             transform: translateY(0%);
-            
+
         }
 
         100% {
