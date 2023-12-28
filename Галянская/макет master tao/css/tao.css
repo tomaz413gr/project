@@ -716,19 +716,18 @@ input[type="file"] {
 
 .slider__item {
     padding: 0 15px 0;
-    
+
 }
 
 .slider__wrapper {
-overflow: hidden;
-height: 479px;
+    overflow: hidden;
+    height: 492px;
     border-radius: 20px;
     background-color: #363A4D;
 }
 
 .slider__wrapper img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -861,7 +860,7 @@ height: 479px;
 .sliders__second {
     max-width: 1820px;
     margin: 0 auto;
-    
+
     border-radius: 20px;
     background: linear-gradient(0deg, #363A4D 0%, #363A4D 100%), #F7F7F7;
     margin-top: 100px;
@@ -870,9 +869,34 @@ height: 479px;
 
 }
 
+.slider__wrapper--second {
+    overflow: hidden;
+    height: 479px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.slider__wrapper--second img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__info--absolute {
+    position: absolute;
+    top: 223px;
+    left: 30px;
+    z-index: 9;
+}
+
+.card__info--absolute>.card__title {
+    text-align: left;
+}
+
 .card__info--sliderSecond {
-font-size: 15px;
-line-height: 1.2; /* 18.675px */
+    font-size: 15px;
+    line-height: 1.2;
+    /* 18.675px */
 }
 
 
