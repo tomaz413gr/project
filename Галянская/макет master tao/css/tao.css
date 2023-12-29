@@ -902,7 +902,7 @@ input[type="file"] {
 .aboutUs__inner {
     display: flex;
     flex-wrap: nowrap;
-margin-top: 90px;
+    margin-top: 90px;
 }
 
 .aboutUs__info>.sectionWhy__title {
@@ -930,20 +930,28 @@ p:not(:last-child) {
 }
 
 .folder {
-   
+
     height: 548px;
     overflow: hidden;
     position: absolute;
     top: 0px;
     left: 55px;
 }
+
 .folder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.questions__inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
+.questions__tabs {}
+
+.questions__input {}
 
 
 
@@ -974,8 +982,11 @@ p:not(:last-child) {
         gap: 35px;
         justify-content: center;
     }
-    .aboutUs__folder {
 
+    .aboutUs__folder {}
+
+    .aboutUs__info {
+        padding: 0 50px;
     }
 }
 
@@ -1020,6 +1031,7 @@ p:not(:last-child) {
 
 }
 
+@media (max-width:1000px) {}
 
 @media (max-width: 930px) {
     .nav {
@@ -1033,6 +1045,8 @@ p:not(:last-child) {
     .burger {
         display: flex;
     }
+
+
 
     .burger__menu.menu__open {
         display: flex;
@@ -1081,6 +1095,28 @@ p:not(:last-child) {
 
     .burger__menu a:hover {
         color: #979595;
+    }
+
+}
+
+@media (max-width:800px) {
+    .folder img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .aboutUs__info {
+        padding: 0 20px;
+    }
+
+    .folder {
+        top: -6px;
+        left: 30px;
+    }
+
+    .cirle__gray {
+        width: 300px;
+        height: 300px;
     }
 
 }
