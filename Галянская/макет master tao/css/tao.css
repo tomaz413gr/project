@@ -949,9 +949,14 @@ p:not(:last-child) {
     flex-wrap: nowrap;
 }
 
-.questions__tabs {}
+.questions__tabs {
+    
+}
 
-.questions__input {}
+.questions__input {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
