@@ -976,10 +976,29 @@ p:not(:last-child) {
     line-height: 1.2;
     position: relative;
     padding: 21px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
-.block__title:before,
+.active {
+    transform: rotate(90deg);
+    
+}
+
+.arrow__tabs--cirkle {
+    width: 27px;
+    height: 27px;
+    fill: white;
+}
+
+.arrow__tabs--cirkle.active {
+    fill: red;
+}
+
+
+/* .block__title:before,
 .block__title:after {
     content: '';
     width: 10px;
@@ -989,31 +1008,31 @@ p:not(:last-child) {
     top: 20px;
     transition: all .3s ease;
 
-}
+} */
 
-.block__title:before {
+/* .block__title:before {
     transform: rotate(40deg);
     left: 0;
-}
+} */
 
-.block__title:after {
+/* .block__title:after {
     transform: rotate(-40deg);
     left: 7px;
-}
+} */
 
 .block__text {
     display: none;
 }
 
-.block__title.active::before {
+/* .block__title.active::before {
     background-color: red;
     transform: rotate(-40deg);
-}
+} */
 
-.block__title.active::after {
+/* .block__title.active::after {
     background-color: red;
     transform: rotate(40deg);
-}
+} */
 
 .questions__input {
     max-width: 390px;
