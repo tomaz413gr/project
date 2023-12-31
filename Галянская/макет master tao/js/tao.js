@@ -19,7 +19,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
@@ -93,9 +93,12 @@ burger.addEventListener('click', ()=> {
 $(document).ready(function(){
     $('.block__title').click(function (event) {
         if ($('.inner__block').hasClass('one')){
-            $('.block__title').not($(this)).removeClass('active');
             $('.block__text').not($(this).next()).slideUp(300);
-            $('.arrow__tabs--cirkle').toggleClass('active');
+            $(this).toggleClass('active');
+            $('.block__title').not($(this)).removeClass('active');
+            $(this).toggleClass('active--bg');
+            $('.block__title').not($(this)).removeClass('active--bg');
+
         }
         
         $(this).next().slideToggle(300);
