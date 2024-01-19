@@ -599,7 +599,6 @@ input[type="file"] {
 
 .section__why {
     max-width: 1820px;
-    /* flex-shrink: 0; */
     border-radius: 20px;
     padding: 90px 0;
     background: linear-gradient(0deg, #363A4D 0%, #363A4D 100%), #F7F7F7;
